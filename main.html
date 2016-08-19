@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>NTTC GIS Panel</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="mainstyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  </head>
+
+
+  <body>
+
+
+  <div data-role="page" id="intro">
+
+    <div data-role="header">
+      <h2>Introduction</h2>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#title" data-icon="home">Home</a></li>
+          <li><a href="#video"data-icon="arrow-r">Next</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-role="panel" id="obstacles1">
+      <p>- inter-agency accident report communication standards</p>
+      <p>- geographic mis or under representation</p>
+      <p>- lack of universal data standards</p>
+      <p>- past partial solutions not industry-standard</p>
+      <a href="#intro" data-rel="close" class="ui-btn ui-icon-carat-l ui-btn-icon-left ui-btn-inline">Close</a>
+    </div>
+    <div data-role="main" class="ui-content">
+      <p>There are several issues preventing tribes from receiving full federal transportation funding</p>
+      <a href="#obstacles1" class="ui-btn ui-icon-bars ui-btn-icon-left ui-btn-inline">Obstacles</a>
+    </div>
+
+    <div data-role="panel" id="GIS">
+      <p>- industry-standard spatial format</p>
+      <p>- supports file formats used by open-source and proprietary software</p>
+      <p>- employs universal data standard using Local Government Data Standard (LGIM)</p>
+      <p>- explicit geography (ability to pinpoint event locations)</p>
+      <p>- supports a variety of outputs for technical and non-technical users, other agencies, the public, and the federal government</p>
+      <a href="#intro" data-rel="close" class="ui-btn ui-icon-carat-l ui-btn-icon-left ui-btn-inline">Close</a>
+    </div>
+    <div data-role="main" class="ui-content">
+      <p>Geographic Information Systems adoption would remove these obstacles.</p>
+      <a href="#GIS" class="ui-btn ui-icon-bars ui-btn-icon-left ui-btn-inline">G.I.S. features</a>
+    </div>
+
+    <div data-role="panel" id="otherGIS">
+      <p>- can promote eco-tourism</p>
+      <p>- career pathway in and out of transportation industry</p>
+      <a href="#intro" data-rel="close" class="ui-btn ui-icon-carat-l ui-btn-icon-left ui-btn-inline">Close</a>
+    </div>
+    <div data-role="main" class="ui-content">
+      <p>Tribal adoption of GIS can have other benefits, outside of road safety and funding</p>
+      <a href="#otherGIS" class="ui-btn ui-icon-bars ui-btn-icon-left ui-btn-inline">Other Benefits</a>
+    </div>
+
+  </div>
+
+
+  <div data-role="page" id="video">
+      <div data-role="header">
+        <h2>Police Response</h2>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#intro" data-icon="arrow-l">Previous</a></li>
+            <li><a href="#title" data-icon="home">Home</a></li>
+            <li><a href="#animation"data-icon="arrow-r">Next</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="crashsimulation" text-align:"center">
+        <table align=center><tr><td>
+          <iframe src="https://player.vimeo.com/video/175273003" width="1334" height="750" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p>
+            <a href="https://vimeo.com/175273003">trafficaccident</a> from
+            <a href="https://vimeo.com/user27181538">kevin gabelman</a> on
+            <a href="https://vimeo.com">Vimeo</a>.
+          </p>
+        </td></tr></table>
+      </div>
+  </div>
+
+  <div data-role="page" id="animation">
+
+      <div data-role="header">
+        <h2>Location Problems</h2>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#video" data-icon="arrow-l">Previous</a></li>
+            <li><a href="#title" data-icon="home">Home</a></li>
+            <li><a href="after.html"data-icon="arrow-r">Next</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="wrap">
+        <div class="map-bg">
+
+            <div class="pin" id="pin1"></div>
+            <div class="pin" id="pin2"></div>
+            <div class="pin" id="pin3"></div>
+            <div class="pin" id="pin4"></div>
+            <div class="pin" id="pin5"></div>
+            <div class="pin" id="pin6"></div>
+            <div class="pinred"></div>
+            <div class="pin-halo"></div>
+            <label for id="pinlabel1" class="pinlabel"><p>Reported at exit</p></label>
+            <label for id="pinlabel2" class="pinlabel"><p>Reported with inaccurate GPS</p></label>
+            <label for id="firstlabel" class="pinlabel"><p>Actual accident location</p></label>
+            <label for id="locationlabel" class="pinlabel"><p>Reported from opposite direction</p></label>
+            <label for id="halolabel" class="pinlabel"><h4><font color="blue" weight="bold">Overall Reporting<br>Prescision</font></h4></label>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Greensock-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+  </body>
+</html>

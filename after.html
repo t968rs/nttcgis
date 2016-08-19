@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="after.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- Include the jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>NTTC GIS Panel</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="after.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  </head>
+
+
+  <body>
+    <div data-role="page" id="after">
+      <div data-role="header">
+        <h2>Reporting with GIS</h2>
+          <div data-role="navbar">
+            <ul>
+              <li><a href="main.html" data-icon="arrow-l">Previous</a></li>
+              <li><a href="#title" data-icon="home">Home</a></li>
+              <li><a href="#content"data-icon="arrow-r">Next</a></li>
+            </ul>
+          </div>
+      </div>
+
+
+      <div class="wrap">
+        <div class="map-bg">
+
+            <div class="pin" id="pin1"></div>
+            <div class="pin" id="pin2"></div>
+            <div class="pin" id="pin3"></div>
+            <div class="pin" id="pin4"></div>
+            <div class="pin" id="pin5"></div>
+            <div class="pin" id="pin6"></div>
+            <div class="pinred"></div>
+            <div class="pin-halo"></div>
+            <label for id="halolabel" class="pinlabel"><h4><font color="blue" weight="bold">Overall Reporting<br>Prescision</font></h4></label>
+          </div>
+        </div>
+      </div>
+
+  <!--Greensock-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+</body>
+</html>

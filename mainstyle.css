@@ -1,0 +1,264 @@
+/*--------------------------------------------------------
+   Kevin T Gabelman
+----------------------------------------------------------*/
+
+body {
+    background: #EFEFEF;
+}
+
+logo1.img {
+
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+<logo1 src="images/citt_logo.png">
+
+.logo2 {
+  background: url(images/Metrans_logo.jpg) no-repeat;
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.logo3 {
+  background: url(images/swtwc_logo.png) no-repeat;
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.wrap {
+    border-bottom: 0px solid #CF96EC;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.map-header {
+    background: #535a6c;
+    padding: 20px;
+    margin-top: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    line-height: 1em;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/*Designate how the animation will take place*/
+@keyframes translate {
+    15% {
+    transform: translate(-13em,-3em);
+    }
+    33% {
+    transform: translate(-3em,3em);
+    }
+    67% {
+    transform: translate(4em,5em);
+    }
+    100% {
+    transform: translate(5em,-14em);
+    }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(.3);
+    opacity: 0.5;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+@keyframes appear {
+  0% {
+    transform:scale(0.1);
+    opacity:0;
+  }
+  50% {
+    transform: scale(.5);
+    opacity: .5
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* .wrap is our container div and will vary in name on your site */
+.wrap {
+    margin: 0 auto;
+}
+
+.map-bg {
+    background: url(images/map.png) no-repeat;
+    object-position: 50% 50%;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding:2px;
+    border:2px solid #d3d3d3;
+    background-color:#d3d3d3;
+}
+
+
+.marker {
+    width: 100px;
+    height: 100px;
+    object-position: 70% 70%;
+    display: block;
+}
+
+
+.pin {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: rgba(5, 124, 255, 1);
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    z-index: 1000;
+
+
+}
+
+#pin1 {
+  position: absolute;
+  top: 360px;
+  left: 300px;
+  animation: bounceIn 2s ease-in 10s backwards;
+}
+
+#pin2 {
+  position: absolute;
+  top: 360px;
+  left: 320px;
+  animation: bounceIn 2s ease-in 10.1s backwards;
+}
+
+#pin3 {
+  position: absolute;
+  top: 380px;
+  left: 350px;
+  animation: bounceIn 2s ease-in 10.2s backwards;
+}
+
+#pin4 {
+  position: absolute;
+  top: 580px;
+  left: 400px;
+  animation: bounceIn 2s ease-in 13s backwards;
+}
+
+#pin5 {
+  position: absolute;
+  top: 300px;
+  left: 450px;
+  animation: bounceIn 2s ease-in 14s backwards;
+}
+
+#pin6 {
+  position: absolute;
+  top: 580px;
+  left: 600px;
+  animation: bounceIn 2s ease-in 14.5s backwards;
+}
+
+.pinred {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 530px;
+    left: 600px;
+    background: rgba(150, 30, 30, 1);
+    border: 2px solid #000000;
+    border-radius: 50%;
+    z-index: 1000;
+    animation: bounceIn 2s ease-in 1s backwards;
+}
+
+
+.pin-halo {
+    width: 500px;
+    height: 500px;
+    left: 225px;
+    top: 260px;
+    position: absolute;
+    display: block;
+    background: rgba(5, 124, 255, 0.6);
+    border-radius: 50%;
+    opacity: 50%;
+    animation: bounceIn 2s ease-in 20s backwards;
+
+}
+
+.pinlabel {
+  position: absolute;
+}
+
+#pinlabel1 {
+  top: 360px;
+  left: 400px;
+  animation: appear 1s ease-in 11s backwards;
+}
+
+#pinlabel2 {
+  top: 240px;
+  left: 460px;
+  animation: appear 1s ease-in 16s backwards;
+}
+
+#locationlabel {
+  top: 600px;
+  left: 600px;
+  animation: appear 1s ease-in 17.5s backwards;
+
+}
+
+#firstlabel {
+  top: 470px;
+  left: 610px;
+  animation: appear 1s ease-in 2s backwards;
+}
+
+#halolabel {
+  top: 480px;
+  left: 385px;
+  animation: bounceIn 2s ease-in 20s backwards;
+}
+
+
+
+.crashsimulation {
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+
+/* Adjusts the background image and marker for smaller screens */
+@media only screen and (max-width: 414px) {
+    .map-bg {
+        background-position: -100px 0px;
+    }
+
+    .marker {
+        left: 100px;
+    }
+}
